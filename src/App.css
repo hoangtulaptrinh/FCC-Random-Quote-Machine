@@ -1,33 +1,72 @@
-.App {
-  text-align: center;
+body{
+  transition-delay: 5000ms;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.boss{
+  font-style: italic;
+  height: 657px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bonus{
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.app{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.total {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  max-width:600px;
+  max-height:600px;
+  border: solid 5px rgb(214, 31, 31);
+  background-color: white;
+}
+.content {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 22px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  max-width: 550px;
+  height: auto;
+  border: solid 1px green;
+  margin-bottom: 50px;
+  flex-direction: column;
 }
-
-.App-link {
-  color: #61dafb;
+.content > p{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 18px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer{
+display: flex;
+justify-content: space-between;
+height: 70px;
+border: solid 1px black;
+}
+.link{
+  display: flex;
+  justify-content: space-between;
+  width : 200px;
+}
+.next{
+  display: flex; 
+}
+.btn{
+  height: 100%;
+  width:95px;
+}
+.btn:hover {
+background-color: aqua;
+}
+a{
+  text-decoration: none;
+}
+.tacgia{
+  display: flex;
+  justify-content: center;
+  color: crimson;
+  font-family: sans-serif;
 }
